@@ -35,7 +35,6 @@ class _HomeState extends State<Home> {
       double height = double.parse(heightController.text) / 100;
       double weight = double.parse(weightController.text);
       double imc = weight / (height * height);
-      print(imc);
       if (imc < 18.6) {
         _infoText = "Abaixo do Peso (${imc.toStringAsPrecision(3)})";
       } else if (imc >= 18.6 && imc < 24.9) {
